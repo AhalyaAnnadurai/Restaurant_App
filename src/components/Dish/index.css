@@ -1,0 +1,57 @@
+.dish-card {
+  margin: 5px;
+  box-shadow: 5px 4px 5px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.details {
+  max-width: 300px;
+}
+.custom-text {
+  color: blue;
+}
+.quantity-button {
+  border-radius: 50px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  width: 100px;
+}
+.dish-image {
+  max-height: 10%;
+  max-width: 10%;
+}
+.btn-text {
+  margin: 5px;
+}
+.calories-text {
+  color: orange;
+}
+.veg-border {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 5px;
+  border-color: green;
+  padding: 20px;
+}
+.non-veg-border {
+  border-color: red;
+}
+.veg {
+  border-radius: 50px;
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-color: green;
+}
+.non-veg {
+  border-radius: 50px;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}

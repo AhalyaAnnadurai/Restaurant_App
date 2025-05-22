@@ -1,0 +1,16 @@
+.tab-button {
+  border-style: none;
+  border-width: 0px;
+  padding: 10px;
+  font-size: 25px;
+}
+.active-tab {
+  color: red;
+}
+.category-list {
+  list-style-type: none;
+}
+.con{
+  display: flex;
+  flex-wrap: wrap;
+}
