@@ -6,7 +6,7 @@ const Category = props => {
     onChangeCategory(id)
   }
   return (
-    <div className="con">
+    <div>
       <li className="category-list">
         <button
           key={id}
