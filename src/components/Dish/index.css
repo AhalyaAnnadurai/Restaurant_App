@@ -29,29 +29,41 @@
 .calories-text {
   color: orange;
 }
+
 .veg-border {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-width: 5px;
-  border-color: green;
-  padding: 20px;
+  border: 1px solid #00923f;
+  align-self: flex-start;
 }
+
 .non-veg-border {
-  border-color: red;
+  border: 1px solid #92282a;
 }
-.veg {
-  border-radius: 50px;
-  height: 10px;
-  width: 10px;
-  background-color: green;
-  border-color: green;
+
+.veg-round {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #00923f;
+  margin: 5px;
 }
-.non-veg {
-  border-radius: 50px;
-  background-color: red;
-  width: 10px;
-  height: 10px;
+
+.non-veg-round {
+  background-color: #92282a;
+}
+
+@media all and (max-width: 576px) {
+  .dish-image {
+    width: 50px;
+    height: 50px;
+  }
+  .details {
+    font-size: 10px;
+  }
+  .quantity-button {
+    font-size: 10px;
+  }
+  .veg-round {
+    height: 15px;
+    width: 15px;
+  }
 }
