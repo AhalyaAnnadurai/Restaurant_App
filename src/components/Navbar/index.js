@@ -8,9 +8,12 @@ class Navbar extends Component {
     return (
       <div className="navbar">
         <h1>UNI RESTRO CAFE</h1>
+         <div className="order-con">
+        <p className="my-order-text">My Order</p>
         <div className="cart-con">
           <RiShoppingCart2Fill className="cart-icon" />
           <span className="count">{count}</span>
+        </div>
         </div>
       </div>
     )
