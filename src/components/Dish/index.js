@@ -2,6 +2,8 @@ import './index.css'
 
 const Dish = props => {
   const {dish, count, onUpdateCount} = props
+    const {dishType}=dish
+
   const hasCustomization = dish.addonCat && dish.addonCat.length > 0
 
   const onClickIncre = () => {
@@ -12,10 +14,10 @@ const Dish = props => {
   }
   return (
     <div className="dish-card">
-      <div
-        className={`veg-border ${dish.dishType === 1 ? 'non-veg-border' : ''}`}
+       <div
+        className={`veg-border ${dishType === 1 ? 'non-veg-border' : ''} `}
       >
-        <div className={`veg ${dish.dishType === 1 ? 'non-veg' : ''}`}></div>
+        <div className={`veg-round ${dishType === 1 ? 'non-veg-round' : ''}`} />
       </div>
       <div className="details">
         <h1>{dish.dishName}</h1>
