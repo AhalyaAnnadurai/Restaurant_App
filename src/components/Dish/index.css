@@ -11,6 +11,10 @@
 .custom-text {
   color: blue;
 }
+
+.not-custom-text {
+  color: red;
+}
 .quantity-button {
   border-radius: 50px;
   background-color: green;
