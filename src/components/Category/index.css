@@ -6,13 +6,16 @@
  background-color: transparent;
 
 }
+
+@media all and (max-width: 768px) {
+  .tab-button {
+    font-size: 15px;
+  }
+}
 .active-tab {
   color: red;
 }
 .category-list {
   list-style-type: none;
 }
-.con{
-  display: flex;
-  flex-wrap: wrap;
-}
+
