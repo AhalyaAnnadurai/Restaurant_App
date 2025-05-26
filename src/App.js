@@ -2,6 +2,8 @@ import {Component} from 'react'
 import Navbar from './components/Navbar'
 import Category from './components/Category'
 import Dish from './components/Dish'
+import './App.css'
+
 
 const convertDishToCamelCase = eachdish => ({
   dishId: eachdish.dish_id,
