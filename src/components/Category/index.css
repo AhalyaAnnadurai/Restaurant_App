@@ -3,6 +3,8 @@
   border-width: 0px;
   padding: 10px;
   font-size: 25px;
+ background-color: transparent;
+
 }
 .active-tab {
   color: red;
