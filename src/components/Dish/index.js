@@ -25,8 +25,10 @@ const Dish = props => {
           {dish.dishCurrency} {dish.dishPrice}
         </p>
         <p>{dish.dishDescription}</p>
-        {hasCustomization && (
+        {hasCustomization ? (
           <p className="custom-text">Customizations available</p>
+          ) : (
+          <p className="not-custom-text">Not available</p>
         )}
         <div className="quantity-button">
           <button className="btn-text" onClick={onClickDres}>
