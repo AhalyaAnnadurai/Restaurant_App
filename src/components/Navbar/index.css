@@ -22,3 +22,21 @@
   color: white;
   border-radius: 5px;
 }
+.order-con {
+  display: flex;
+}
+
+.my-order-text {
+  display: none;
+  font-size: 28px;
+}
+@media all and (min-width: 768px) {
+  .my-order-text {
+    display: block;
+  }
+}
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 15px;
+  }
+}
