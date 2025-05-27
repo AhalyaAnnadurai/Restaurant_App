@@ -2,7 +2,7 @@ import './index.css'
 
 const Dish = props => {
   const {dish, count, onUpdateCount} = props
-    const {dishType}=dish
+    const {dishType,dishAvailability}=dish
 
   const hasCustomization = dish.addonCat && dish.addonCat.length > 0
 
@@ -25,20 +25,20 @@ const Dish = props => {
           {dish.dishCurrency} {dish.dishPrice}
         </p>
         <p>{dish.dishDescription}</p>
-        {hasCustomization ? (
+        {hasCustomization &&(
           <p className="custom-text">Customizations available</p>
-          ) : (
-          <p className="not-custom-text">Not available</p>
-        )}
+          ) }
+{dishAvailability && (
         <div className="quantity-button">
-          <button className="btn-text" onClick={onClickDres}>
-            -{' '}
+          <button className="btn-text" type="button" onClick={onClickDres}>
+            -
           </button>
           <span className="btn-text">{count}</span>
-          <button className="btn-text" onClick={onClickIncre}>
+          <button className="btn-text" type="button" onClick={onClickIncre}>
             +
           </button>
-        </div>
+        </div>)}
+ {!dishAvailability && (<p>Not available</p>)
       </div>
       <p className="calories-text">{dish.dishCalories} calories</p>
       <img src={dish.dishImage} alt={dish.dishName} className="dish-image" />
