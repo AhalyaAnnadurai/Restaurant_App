@@ -4,10 +4,10 @@ import './index.css'
 
 class Navbar extends Component {
   render() {
-    const {count} = this.props
+    const {count,name} = this.props
     return (
       <div className="navbar">
-        <h1>UNI RESTRO CAFE</h1>
+        <h1>{name}</h1>
          <div className="order-con">
         <p className="my-order-text">My Order</p>
         <div className="cart-con">
