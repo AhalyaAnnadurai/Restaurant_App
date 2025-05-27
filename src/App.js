@@ -26,6 +26,7 @@ const convertCategoryToCamelCase = eachcategory => ({
 
 class App extends Component {
   state = {
+    restaurantName="",
     cartCount: 0,
     category: [],
     dishes: [],
@@ -45,7 +46,9 @@ class App extends Component {
     const rawCategory = data[0].table_menu_list
     const category = rawCategory.map(convertCategoryToCamelCase)
     const firstId = category[0].menuCategoryId
+    const restaurantName=data.restaurant_name
     this.setState({
+      restaurantName,
       category,
       activeCategory: firstId,
       dishes: category[0].CategoryDishes,
@@ -75,10 +78,10 @@ class App extends Component {
   }
 
   render() {
-    const {cartCount, category, activeCategory, dishes, dishCounts} = this.state
+    const {restaurantName, cartCount, category, activeCategory, dishes, dishCounts} = this.state
     return (
       <div>
-        <Navbar count={cartCount} />
+        <Navbar count={cartCount} name={restaurantName} />
         <ul className="category-section">
           {category.map(cat => (
             <Category
